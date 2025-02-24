@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cards-cont {
+    margin-top: 12em;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: max-content;
+    align-content: flex-start;
+    padding-bottom: 3rem;
+    align-items: stretch;
+    
+}
+.search-sec{
+    min-width: 100%;
+    max-height: max-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+    /* background-color: aqua; */
+    top: 8em;
+    gap:3px;
+}
+.search-cont {
+    /* padding: 3px; */
+    border: 2px solid #0d6efd;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+}
+input.search-items {
+    border: none;
+    border-radius: 11px 0px 0px 11px;
+    outline: none;
+    padding: 5px;
+}
+button.btn-search.btn.btn-primary {
+    border-radius: 0px 11px 11px 0px;
+}
+.search-cont:focus-within{
+    border: 2px solid rgb(38, 243, 38);
+    box-shadow: 3px 3px 5px rgba(0, 255, 64, 0.747);
+    
+}
+.search-cont.active{
+    animation:scale 1s ease-in-out forwards;
+}
+.search-cont.nonactive{
+    animation: scaleout 1s ease-in-out forwards;
+}
+@keyframes scaleout{
+    0%{
+        scale: 1;
+    }100%{
+        scale: 0;
+    }
+}
+@keyframes scale {
+    0%{
+        scale: 0;
+    }100%{
+        scale: 1;
+    }
+}
+.empty-items{
+    min-width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.load-new {
+    min-width: 100%;
+    min-height: 200px;
+    /* background-color: #0d6efd; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+}
+/* HTML: <div class="loader"></div> */
+.loader3 {
+    width: 90px;
+    height: 14px;
+    --c:#0a54a8 92%,#0000;
+    background: 
+      radial-gradient(circle closest-side,var(--c)) calc(100%/-4) 0,
+      radial-gradient(circle closest-side,var(--c)) calc(100%/4)  0;
+    background-size:calc(100%/2) 100%;
+    animation: l14 1.5s infinite;
+  }
+  @keyframes l14 {
+      0%   {background-position: calc(100%/-4) 0    ,calc(100%/4) 0}
+      50%  {background-position: calc(100%/-4) -14px,calc(100%/4) 14px}
+      100% {background-position: calc(100%/4)  -14px,calc(3*100%/4) 14px}
+  }
+@media (max-width: 796px) {
+    .cards-cont{
+        margin-top: 4em;
+        padding-bottom: 1em;
+        /* margin-bottom: 3em; */
+        align-content: center;
+        /* justify-content: center; */
+    }
+    .search-sec{
+        top: 0;
+    }
+}

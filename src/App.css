@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.container-section{
+  min-height: 100vh;
+  min-width: 100%;
+}
+.toastify-custom {
+  background-color: #4CAF50; /* Ganti dengan warna yang diinginkan */
+  color: white;              /* Warna teks */
+  font-weight: bold;         /* Mengubah ketebalan font */
+  border-radius: 8px;        /* Menambahkan sudut membulat */
+}
+.Toastify__progress-bar {
+  background-color: #FF5733; /* Ganti warna progress bar sesuai keinginan */
+  height: 5px;               /* Mengatur tinggi progress bar */
+  border-radius: 5px;        /* Membuat progress bar dengan sudut membulat */
+}
+
+.Toastify__toast--error{
+  background-color: black;
+}
+/* Gaya untuk progress bar pada toast sukses */
+.Toastify__toast--success .Toastify__progress-bar {
+  background-color: blue; /* Ganti dengan warna hijau untuk sukses */
+}
+
+/* Gaya untuk progress bar pada toast error */
+.Toastify__toast--error .Toastify__progress-bar {
+  background-color: #FF5733; /* Ganti dengan warna merah untuk error */
+}
+
+/* Gaya untuk progress bar pada toast info */
+.Toastify__toast--info .Toastify__progress-bar {
+  background-color: #2196F3; /* Ganti dengan warna biru untuk info */
+}
+
+/* Gaya untuk progress bar pada toast warning */
+.Toastify__toast--warning .Toastify__progress-bar {
+  background-color: #FF9800; /* Ganti dengan warna orange untuk warning */
+}
+
+/* Style untuk Toastify container */
+.Toastify__toast-container {
+  top: 2px; /* Menyesuaikan jarak dari atas */
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

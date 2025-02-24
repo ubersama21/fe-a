@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.formR-sec{
+    min-width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Applies a blur effect to the background */
+    border-radius: 10px; /* Optional: gives rounded corners */
+    padding: 20px; /* Optional: adds some padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    position: fixed;
+
+ 
+}
+.formR-cont{
+    max-width: 85%;
+    min-width: 85%;
+    max-height: 100vh;  
+    background-color: white;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    overflow: auto !important;
+    flex-grow: 1;
+    position: absolute;
+    padding-bottom: 4rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    
+}
+.form {
+    width: 100%;
+    min-width: 35vw !important;
+}
+.formR-sec.showF{
+    max-width: 100%;
+    top:-2rem;
+    opacity: 1;
+    z-index: 100;
+    animation: showf 0.5s ease-in forwards;
+}
+.formR-sec.hideF{
+    max-width: 100%;
+    top:5rem;
+    opacity: 1;
+    animation: hidef 0.5s ease-out forwards;
+   
+}
+.textR-head{
+    text-align: center;
+    padding-top: 3rem;
+}
+.btnH-cont{
+    min-width: 80%;
+    min-height: 1rem;
+    max-height: 1rem;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Applies a blur effect to the background */
+    border-radius: 10px; /* Optional: gives rounded corners */
+    padding: 20px; /* Optional: adds some padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 12em;
+    border-bottom-right-radius: 12em;
+    /* flex-direction: column; */
+    
+}
+button.btn-hide.btn.btn-primary{
+    background-color: grey !important;
+    margin-top: 0;
+    min-width: 80%;
+    min-height: 2px;
+    padding: 3px 5px;
+    max-height: 2px !important;
+
+}
+button.btn-hide.btn.btn-primary::after{
+    content: '';
+    min-width: 80%;
+    min-height: 0.1rem;
+    background-color: grey;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: middle 1.5s ease-out  ;
+}
+
+.image-preview{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.image-container {
+    border: 1px solid black;
+    padding: 0.1em;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+
+}
+button.btn-dimg.btn.btn-primary {
+    position: absolute;
+}
+@keyframes middle{
+    0%{
+        min-width: 0%;
+    }100%{
+        min-width: 80%;
+    }
+}
+@keyframes showf{
+    0%{
+        transform: translateY(100%);
+        
+    }100%{
+        transform: translateY(3em);
+      
+    }
+}
+@keyframes hidef{
+    0%{
+      transform: translateY(3em);
+      /* display: flex; */
+    }100%{
+      transform: translateY(100%);
+      /* display: none ; */
+    }
+}

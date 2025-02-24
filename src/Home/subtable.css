@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.headtag th,
+.heading-subtable th {
+  position: sticky;
+  background-color: #f8f9fa; /* Optional: change background color */
+  z-index: 1; /* Ensure that they stay on top of the content */
+}
+.subs-table{
+  margin: 0;
+}
+/* For the first row (headtag) */
+.headtag th {
+  top: 0; 
+  text-align: center;
+}
+
+/* For the second row (heading-subtable) */
+.heading-subtable th {
+  top: 40px; /* Adjust based on the height of the first row */
+  z-index: 0; /* Optional: to ensure the first row stays on top */
+}
+.theader{
+    position: relative;
+}
+th.span-none{
+  text-align: center;
+}
+tr.tr-subs{
+  background-color: #611f1f;
+}

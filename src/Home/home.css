@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-sec{
+    /* z-index: 1; */
+    position: relative;
+    /* overflow-y: auto; */
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    overflow: hidden;
+    /* padding-bottom:15rem; */
+}
+
+.btn-reg{
+    z-index: 1;
+}
+.btn-addSec{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    position:fixed;
+    z-index: 5;
+    max-height: fit-content;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    bottom: 8em;
+
+}
+button.btn-addss{
+    padding: 0; /* Menghapus padding */
+    display: block; /* Agar tombol menjadi block element */
+    margin: 0 0; /* Memusatkan tombol secara horizontal */
+    max-width: 4em !important;
+    max-height: 4em !important;
+    width: 6em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1); /* Warna semi-transparan */
+    backdrop-filter: blur(10px); /* Efek blur di belakang elemen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-color: wheat;
+    /* transform-origin: center; Memastikan rotasi terjadi di tengah */
+    /* transition: transform 0.3s ease-in-out;  */
+}
+p.addbtn{
+    font-size: 2.3em;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgb(24, 233, 24), rgba(255, 255, 255, 0.822)); /* Gradient dari hijau ke putih */
+    -webkit-background-clip: text; /* Membuat gradient hanya diterapkan pada teks */
+    color: transparent; /* Membuat teks transparan agar background gradient terlihat */
+  
+}
+button.btn-addss.active{
+    animation: spin 0.5s ease-in forwards;
+    
+}
+button.btn-addss.hide{
+    animation: spinB 0.5s ease-in forwards;
+}
+.btn-addCont{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 2em;
+    margin-left: 1em;
+}
+.btn-addsss{
+    margin: 0.5em;
+}
+.btn-addCont.hide{
+    animation:hideA 0.3s ease-in-out forwards;
+}
+.btn-addCont.active{
+    animation:hideB 0.3s ease-in-out forwards;
+}
+.cards-cont{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: max-content;
+    align-content: center;
+    padding-bottom: 3rem;
+}
+button.btn-addsss.btn-reg.btn.btn-primary{
+    background-color: rgba(255, 255, 255, 0.1); /* Warna semi-transparan */
+    backdrop-filter: blur(10px); /* Efek blur di belakang elemen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+    border: gray 3px solid;
+}
+/* @-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}*/
+.sec-panel{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+.cont-panel{
+    min-width: 95%;
+    height: max-content;
+    /* background-color: red; */
+    margin-top: 10em;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.panel1{
+    width: 50%;
+    min-height: 300px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:4%;
+}
+.total-prod {
+    width: 45%;
+    height: 80px;
+    max-height: 80px;
+    background-color: #935447;
+    border-radius: 12px;
+    padding: 0 12px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.total-stock {
+    width: 45%;
+    height: 80px;
+    background-color: #7f8aff;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+}
+.panel2{
+    width: 50%;
+    min-height: 300px;
+    max-height: 300px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prod-db{
+    width: 90%;
+    height: 80%;
+    /* background-color: aqua; */
+}
+.tagstats{
+    text-align: center;
+}
+.stats-cont{
+    width: 100%;
+    display: flex;
+    height: max-content;
+    gap: 12px;
+    /* background-color: red; */
+}
+.stats{
+    width: 50%;
+    text-align: center;
+    min-height: 100px;
+   
+    /* background-color: aquamarine; */
+}
+.tag.active{
+    background-color: green;
+    color: white;
+    border-radius: 12px;
+    padding: 12px;
+}
+.tag.nonactive{
+    background-color:red;
+    color: white;
+    border-radius: 12px;
+    padding: 12px;
+}
+.cont-panel2 {
+    min-width: 100%;
+    min-height: 300px;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.stats-prod{
+    width: 50%;
+    max-height: max-content;
+    /* background-color: azure; */
+    
+}
+.stats-penj{
+    width: 50%;
+    min-height: 300px;
+    /* background-color: aquamarine; */
+}
+.head-sub{
+    text-align: center;
+}
+.table-stats{
+    width: 100%;
+    max-height: 250px;
+    overflow: auto;
+    margin-top: 1em;
+    
+}
+.d3-sec{
+    max-width: 100%;
+  
+}
+
+@keyframes hideA {
+    0%{
+        transform: scale(1);
+    }100%{
+        transform: scale(0);
+    }
+}
+@keyframes hideB {
+    0%{
+        transform: scale(0);
+    }100%{
+        transform: scale(1);
+    }
+}
+@keyframes spin { 
+    0%{
+        -webkit-transform: rotate(0deg); 
+        transform:rotate(0deg); 
+    }
+    100% { 
+        -webkit-transform: rotate(41deg); 
+        transform:rotate(41deg); 
+    } 
+} 
+@keyframes spinB { 
+    0%{
+        -webkit-transform: rotate(41deg); 
+        transform:rotate(41deg); 
+       
+    }
+    100% { 
+        -webkit-transform: rotate(0deg); 
+        transform:rotate(0deg); 
+    } 
+} 
+.intime{
+    float: right;
+    margin: 3px 5px;
+
+}
+@media (max-width: 600px) {
+    .cont-panel{
+        margin-top: 1em;
+        margin-bottom:8em;
+    }
+    .panel1{
+        min-width: 100%;
+    }
+    .panel2{
+        min-width: 100%;
+    }
+    .stats-prod{
+        min-width: 100%;
+    }
+    .stats-penj{
+        min-width: 100%;
+    }
+    .cont-panel2{
+        margin-bottom: 2.5em;
+    }
+}

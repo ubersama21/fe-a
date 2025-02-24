@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.table-dx{
+    margin-top: 2em;
+    padding: 1em;
+    text-align: center;
+}
+
+.table-container{
+    overflow: auto;
+    border-radius: 0.3em;
+    max-height: 300px;
+}
+table.table-sec.table.table-hover{
+
+ 
+ font-size: 0.8em;
+ padding: 0;
+ margin-bottom: 0;
+ border-radius: 15px;
+ border: 2px solid whitesmoke;
+}
+.table-bordered>:not(caption)>*>* {
+    padding: 0.1em;
+    border-width: 0 var(--bs-border-width);
+}
+.nf-dt{
+    padding: 3em;
+    text-align: center;
+}

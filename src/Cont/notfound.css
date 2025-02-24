@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nf-section{
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nf-cont{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image-nf{
+    width:30%;
+    height: 30%;
+    object-fit: fill;
+}
+.tag-nf-head{
+    color: rgba(0, 0, 0, 0.993);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(255, 0, 0, 0.5);
+    text-align: center;
+
+}
+.redirect-c{
+    color: red;
+}
